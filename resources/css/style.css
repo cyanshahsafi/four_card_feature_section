@@ -1,6 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-size: 15px;
   font-family: "Poppins";
+  color: rgb(250, 250, 250);
 }
 
 /* HEADER SECTION */
@@ -21,16 +26,116 @@ header h2 {
   font-weight: 600;
   font-size: 40px;
   color: hsl(234, 12%, 34%);
-  padding-top: 20px;
+  padding-top: 15px;
 }
 header p {
   color: hsl(229, 6%, 66%);
   padding-top: 30px;
+  line-height: 1.7;
 }
 
 /* CARDS SECTION */
 .grid {
   display: grid;
   width: 1145px;
+  height: 550px;
+  margin: 0 auto;
   grid-template: repeat(4, 1fr), repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.grid > * {
+  width: 350px;
+  height: 250px;
+  /* border: 1px solid grey; */
+  background-color: rgb(255, 255, 255);
+  border-radius: 7px;
+  color: black;
+  /* padding: 35px; */
+}
+
+.red {
+  padding: 35px;
+  grid-column: 2/3;
+  grid-row: 1/3;
+  border-top: 4px solid hsl(0, 78%, 62%);
+  box-shadow: 0px 15px 30px #ddd;
+}
+.red h4 {
+  font-size: 19px;
+  color: hsl(234, 12%, 34%);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.red p {
+  font-size: 14px;
+  color: hsl(229, 6%, 66%);
+  line-height: 1.7;
+  margin-bottom: 40px;
+}
+
+.cyan {
+  padding: 35px;
+  grid-column: 1/2;
+  grid-row: 2/4;
+  border-top: 4px solid hsl(180, 62%, 55%);
+  box-shadow: 0px 15px 30px #ddd;
+}
+.cyan h4 {
+  font-size: 19px;
+  color: hsl(234, 12%, 34%);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.cyan p {
+  font-size: 14px;
+  color: hsl(229, 6%, 66%);
+  line-height: 1.7;
+  margin-bottom: 40px;
+}
+
+.blue {
+  padding: 35px;
+  grid-column: 3/4;
+  grid-row: 2/4;
+  border-top: 4px solid hsl(212, 86%, 64%);
+  box-shadow: 0px 15px 30px #ddd;
+}
+.blue h4 {
+  font-size: 19px;
+  color: hsl(234, 12%, 34%);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.blue p {
+  font-size: 14px;
+  color: hsl(229, 6%, 66%);
+  line-height: 1.7;
+  margin-bottom: 40px;
+}
+
+.orange {
+  padding: 35px;
+  grid-column: 2/3;
+  grid-row: 3/5;
+  border-top: 4px solid hsl(34, 97%, 64%);
+  box-shadow: 0px 15px 30px #ddd;
+}
+.orange h4 {
+  font-size: 19px;
+  color: hsl(234, 12%, 34%);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.orange p {
+  font-size: 14px;
+  color: hsl(229, 6%, 66%);
+  line-height: 1.7;
+  margin-bottom: 40px;
+}
+
+img {
+  float: right;
 }
