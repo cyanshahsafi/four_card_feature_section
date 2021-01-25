@@ -40,20 +40,42 @@ header p {
   width: 1145px;
   height: 550px;
   margin: 0 auto;
-  grid-template: repeat(4, 1fr), repeat(3, 1fr);
+  grid-template: repeat(4, 1fr), repeat(auto-fit, minmax(350px, 450px));
   justify-items: center;
   align-items: center;
   margin-bottom: 80px;
 }
 
+@media (max-width: 600px) {
+  header {
+    width: auto;
+  }
+  header h1 {
+    font-size: 25px;
+  }
+  header h2 {
+    font-size: 25px;
+  }
+  header p {
+    width: 300px;
+    margin: auto;
+  }
+  .grid {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  }
+  .grid > * {
+    margin-bottom: 30px;
+  }
+}
+
 .grid > * {
   width: 350px;
   height: 250px;
-  /* border: 1px solid grey; */
   background-color: rgb(255, 255, 255);
   border-radius: 7px;
   color: black;
-  /* padding: 35px; */
 }
 
 .red {
